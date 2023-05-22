@@ -1,5 +1,9 @@
 <!-- ここに配列を定義 -->
+<?php
 
+$seasons=["春","夏","秋"];
+
+?>
 <!-- ここまで -->
 <!DOCTYPE html>
 <html lang="ja">
@@ -12,11 +16,13 @@
 </head>
 <body>
   <div class="container">
+  <?php foreach($seasons as $season){  ?>
     <div class="product-box">
       <img src="./clothes.jpg" alt="" class="image">
       <p>商品名</p>
-      <span>〇〇</span>
+      <span><?=$season ?>の新作</span>
     </div>
+  <?php } ?>
   </div>
 </body>
 </html>
